@@ -1,0 +1,951 @@
+Admin@DESKTOP-T5QL9IT MINGW64 /f/C-DAC_march2022/SDM GIT
+$ git --version
+git version 2.36.1.windows.1
+
+Admin@DESKTOP-T5QL9IT MINGW64 /f/C-DAC_march2022/SDM GIT
+$ git init
+Initialized empty Git repository in F:/C-DAC_march2022/SDM GIT/.git/
+
+Admin@DESKTOP-T5QL9IT MINGW64 /f/C-DAC_march2022/SDM GIT (master)
+$ git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+Admin@DESKTOP-T5QL9IT MINGW64 /f/C-DAC_march2022/SDM GIT (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        SCM.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Admin@DESKTOP-T5QL9IT MINGW64 /f/C-DAC_march2022/SDM GIT (master)
+$ git add SCM.txt
+
+Admin@DESKTOP-T5QL9IT MINGW64 /f/C-DAC_march2022/SDM GIT (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   SCM.txt
+
+
+Admin@DESKTOP-T5QL9IT MINGW64 /f/C-DAC_march2022/SDM GIT (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   SCM.txt
+
+
+Admin@DESKTOP-T5QL9IT MINGW64 /f/C-DAC_march2022/SDM GIT (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   SCM.txt
+
+
+Admin@DESKTOP-T5QL9IT MINGW64 /f/C-DAC_march2022/SDM GIT (master)
+$ git restore SCM.txt
+
+Admin@DESKTOP-T5QL9IT MINGW64 /f/C-DAC_march2022/SDM GIT (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   SCM.txt
+
+
+Admin@DESKTOP-T5QL9IT MINGW64 /f/C-DAC_march2022/SDM GIT (master)
+$ git rm --cached SCM.txt
+rm 'SCM.txt'
+
+Admin@DESKTOP-T5QL9IT MINGW64 /f/C-DAC_march2022/SDM GIT (master)
+$ git rm --cached SCM.txt
+fatal: pathspec 'SCM.txt' did not match any files
+
+Admin@DESKTOP-T5QL9IT MINGW64 /f/C-DAC_march2022/SDM GIT (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        SCM.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Admin@DESKTOP-T5QL9IT MINGW64 /f/C-DAC_march2022/SDM GIT (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        SCM.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Admin@DESKTOP-T5QL9IT MINGW64 /f/C-DAC_march2022/SDM GIT (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        SCM.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Admin@DESKTOP-T5QL9IT MINGW64 /f/C-DAC_march2022/SDM GIT (master)
+$ git add SCM*
+
+Admin@DESKTOP-T5QL9IT MINGW64 /f/C-DAC_march2022/SDM GIT (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   SCM.txt
+
+
+Admin@DESKTOP-T5QL9IT MINGW64 /f/C-DAC_march2022/SDM GIT (master)
+$ git cummit -m "initial version"
+git: 'cummit' is not a git command. See 'git --help'.
+
+The most similar command is
+        commit
+
+Admin@DESKTOP-T5QL9IT MINGW64 /f/C-DAC_march2022/SDM GIT (master)
+$ git commit -m "initial version"
+[master (root-commit) e6c0d6b] initial version
+ 1 file changed, 3 insertions(+)
+ create mode 100644 SCM.txt
+
+Admin@DESKTOP-T5QL9IT MINGW64 /f/C-DAC_march2022/SDM GIT (master)
+$ git logs
+git: 'logs' is not a git command. See 'git --help'.
+
+The most similar command is
+        log
+
+Admin@DESKTOP-T5QL9IT MINGW64 /f/C-DAC_march2022/SDM GIT (master)
+$ git log
+commit e6c0d6bd88b60b375820550f291abc316cf7217c (HEAD -> master)
+Author: BadgujarBhushan <bhushanbadgujar87@gmail.com>
+Date:   Mon Jun 20 23:03:27 2022 +0530
+
+    initial version
+
+Admin@DESKTOP-T5QL9IT MINGW64 /f/C-DAC_march2022/SDM GIT (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   SCM.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Admin@DESKTOP-T5QL9IT MINGW64 /f/C-DAC_march2022/SDM GIT (master)
+$ git diff SCM.txt
+diff --git a/SCM.txt b/SCM.txt
+index 1b473ea..81ecb32 100644
+--- a/SCM.txt
++++ b/SCM.txt
+@@ -1,3 +1,6 @@
+ Bhushan Subhash Badgujar
+ Rohini Bhushan Badgujar
+ Dhule Mharashtra
++BE mechanical
++Married
++Cricket
+\ No newline at end of file
+
+Admin@DESKTOP-T5QL9IT MINGW64 /f/C-DAC_march2022/SDM GIT (master)
+$ git add*
+git: 'add*' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+
+Admin@DESKTOP-T5QL9IT MINGW64 /f/C-DAC_march2022/SDM GIT (master)
+$ git add *
+
+Admin@DESKTOP-T5QL9IT MINGW64 /f/C-DAC_march2022/SDM GIT (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   SCM.txt
+
+
+Admin@DESKTOP-T5QL9IT MINGW64 /f/C-DAC_march2022/SDM GIT (master)
+$ git commit -m "updated SCM.txt"
+[master efa658b] updated SCM.txt
+ 1 file changed, 3 insertions(+)
+
+Admin@DESKTOP-T5QL9IT MINGW64 /f/C-DAC_march2022/SDM GIT (master)
+$ git log
+commit efa658b91c901ef36b7223ea34ab17565d27bf45 (HEAD -> master)
+Author: BadgujarBhushan <bhushanbadgujar87@gmail.com>
+Date:   Mon Jun 20 23:10:52 2022 +0530
+
+    updated SCM.txt
+
+commit e6c0d6bd88b60b375820550f291abc316cf7217c
+Author: BadgujarBhushan <bhushanbadgujar87@gmail.com>
+Date:   Mon Jun 20 23:03:27 2022 +0530
+
+    initial version
+
+Admin@DESKTOP-T5QL9IT MINGW64 /f/C-DAC_march2022/SDM GIT (master)
+$ git diff
+
+Admin@DESKTOP-T5QL9IT MINGW64 /f/C-DAC_march2022/SDM GIT (master)
+$ git diff ^C
+fatal: bad revision '^C'
+
+Admin@DESKTOP-T5QL9IT MINGW64 /f/C-DAC_march2022/SDM GIT (master)
+$ git diff ^c
+fatal: bad revision '^c'
+
+Admin@DESKTOP-T5QL9IT MINGW64 /f/C-DAC_march2022/SDM GIT (master)
+$ git diff  efa658b91c901ef36b7223ea34ab17565d27bf45 e6c0d6bd88b60b375820550f291abc316cf7217c
+diff --git a/SCM.txt b/SCM.txt
+index 81ecb32..1b473ea 100644
+--- a/SCM.txt
++++ b/SCM.txt
+@@ -1,6 +1,3 @@
+ Bhushan Subhash Badgujar
+ Rohini Bhushan Badgujar
+ Dhule Mharashtra
+-BE mechanical
+-Married
+-Cricket
+\ No newline at end of file
+
+Admin@DESKTOP-T5QL9IT MINGW64 /f/C-DAC_march2022/SDM GIT (master)
+$ git diff ^C
+fatal: bad revision '^C'
+
+Admin@DESKTOP-T5QL9IT MINGW64 /f/C-DAC_march2022/SDM GIT (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        contact.htm
+        images/
+        index.htm
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Admin@DESKTOP-T5QL9IT MINGW64 /f/C-DAC_march2022/SDM GIT (master)
+$ git add -A
+
+Admin@DESKTOP-T5QL9IT MINGW64 /f/C-DAC_march2022/SDM GIT (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   contact.htm
+        new file:   images/IMG_20210114_132439_556.jpg
+        new file:   index.htm
+
+
+Admin@DESKTOP-T5QL9IT MINGW64 /f/C-DAC_march2022/SDM GIT (master)
+$ git rm --cached contact.htm
+rm 'contact.htm'
+
+Admin@DESKTOP-T5QL9IT MINGW64 /f/C-DAC_march2022/SDM GIT (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   images/IMG_20210114_132439_556.jpg
+        new file:   index.htm
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        contact.htm
+
+
+Admin@DESKTOP-T5QL9IT MINGW64 /f/C-DAC_march2022/SDM GIT (master)
+$ git restore --stage index.htm
+
+Admin@DESKTOP-T5QL9IT MINGW64 /f/C-DAC_march2022/SDM GIT (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   images/IMG_20210114_132439_556.jpg
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        contact.htm
+        index.htm
+
+
+Admin@DESKTOP-T5QL9IT MINGW64 /f/C-DAC_march2022/SDM GIT (master)
+$ git status *
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   images/IMG_20210114_132439_556.jpg
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        contact.htm
+        index.htm
+
+
+Admin@DESKTOP-T5QL9IT MINGW64 /f/C-DAC_march2022/SDM GIT (master)
+$ git add *
+
+Admin@DESKTOP-T5QL9IT MINGW64 /f/C-DAC_march2022/SDM GIT (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   contact.htm
+        new file:   images/IMG_20210114_132439_556.jpg
+        new file:   index.htm
+
+
+Admin@DESKTOP-T5QL9IT MINGW64 /f/C-DAC_march2022/SDM GIT (master)
+$ git rm --cached contact.htm
+error: the following file has staged content different from both the
+file and the HEAD:
+    contact.htm
+(use -f to force removal)
+
+Admin@DESKTOP-T5QL9IT MINGW64 /f/C-DAC_march2022/SDM GIT (master)
+$ git rm --cached contact.htm -f
+rm 'contact.htm'
+
+Admin@DESKTOP-T5QL9IT MINGW64 /f/C-DAC_march2022/SDM GIT (master)
+$ git rm --cached contact.htm
+fatal: pathspec 'contact.htm' did not match any files
+
+Admin@DESKTOP-T5QL9IT MINGW64 /f/C-DAC_march2022/SDM GIT (master)
+$ git rm --cached contact.htm -f
+fatal: pathspec 'contact.htm' did not match any files
+
+Admin@DESKTOP-T5QL9IT MINGW64 /f/C-DAC_march2022/SDM GIT (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   images/IMG_20210114_132439_556.jpg
+        new file:   index.htm
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        contact.htm
+
+
+Admin@DESKTOP-T5QL9IT MINGW64 /f/C-DAC_march2022/SDM GIT (master)
+$ git rm --cached contact.htm
+fatal: pathspec 'contact.htm' did not match any files
+
+Admin@DESKTOP-T5QL9IT MINGW64 /f/C-DAC_march2022/SDM GIT (master)
+$ git rm --cached contact.htm -f
+fatal: pathspec 'contact.htm' did not match any files
+
+Admin@DESKTOP-T5QL9IT MINGW64 /f/C-DAC_march2022/SDM GIT (master)
+$ git add *
+
+Admin@DESKTOP-T5QL9IT MINGW64 /f/C-DAC_march2022/SDM GIT (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   contact.htm
+        new file:   images/IMG_20210114_132439_556.jpg
+        new file:   index.htm
+
+
+Admin@DESKTOP-T5QL9IT MINGW64 /f/C-DAC_march2022/SDM GIT (master)
+$ git commit -m "added web pages"
+[master c03968a] added web pages
+ 3 files changed, 15 insertions(+)
+ create mode 100644 contact.htm
+ create mode 100644 images/IMG_20210114_132439_556.jpg
+ create mode 100644 index.htm
+
+Admin@DESKTOP-T5QL9IT MINGW64 /f/C-DAC_march2022/SDM GIT (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Admin@DESKTOP-T5QL9IT MINGW64 /f/C-DAC_march2022/SDM GIT (master)
+$ git log
+commit c03968a7f5fcf8d7a18c5a06a00bdb1424269a8c (HEAD -> master)
+Author: BadgujarBhushan <bhushanbadgujar87@gmail.com>
+Date:   Mon Jun 20 23:50:22 2022 +0530
+
+    added web pages
+
+commit efa658b91c901ef36b7223ea34ab17565d27bf45
+Author: BadgujarBhushan <bhushanbadgujar87@gmail.com>
+Date:   Mon Jun 20 23:10:52 2022 +0530
+
+    updated SCM.txt
+
+commit e6c0d6bd88b60b375820550f291abc316cf7217c
+Author: BadgujarBhushan <bhushanbadgujar87@gmail.com>
+Date:   Mon Jun 20 23:03:27 2022 +0530
+
+    initial version
+
+Admin@DESKTOP-T5QL9IT MINGW64 /f/C-DAC_march2022/SDM GIT (master)
+$ git config --global user.name "BadgujarBhushan"
+
+Admin@DESKTOP-T5QL9IT MINGW64 /f/C-DAC_march2022/SDM GIT (master)
+$ git config --global user.email "bhushanbadgujar87@gmail.com"
+
+Admin@DESKTOP-T5QL9IT MINGW64 /f/C-DAC_march2022/SDM GIT (master)
+$ git config --list
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=openssl
+http.sslcainfo=C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+pull.rebase=false
+credential.helper=manager-core
+credential.https://dev.azure.com.usehttppath=true
+init.defaultbranch=master
+user.name=BadgujarBhushan
+user.email=bhushanbadgujar87@gmail.com
+core.repositoryformatversion=0
+core.filemode=false
+core.bare=false
+core.logallrefupdates=true
+core.symlinks=false
+core.ignorecase=true
+
+Admin@DESKTOP-T5QL9IT MINGW64 /f/C-DAC_march2022/SDM GIT (master)
+$ git log
+commit c03968a7f5fcf8d7a18c5a06a00bdb1424269a8c (HEAD -> master)
+Author: BadgujarBhushan <bhushanbadgujar87@gmail.com>
+Date:   Mon Jun 20 23:50:22 2022 +0530
+
+    added web pages
+
+commit efa658b91c901ef36b7223ea34ab17565d27bf45
+Author: BadgujarBhushan <bhushanbadgujar87@gmail.com>
+Date:   Mon Jun 20 23:10:52 2022 +0530
+
+    updated SCM.txt
+
+commit e6c0d6bd88b60b375820550f291abc316cf7217c
+Author: BadgujarBhushan <bhushanbadgujar87@gmail.com>
+Date:   Mon Jun 20 23:03:27 2022 +0530
+
+    initial version
+
+Admin@DESKTOP-T5QL9IT MINGW64 /f/C-DAC_march2022/SDM GIT (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Admin@DESKTOP-T5QL9IT MINGW64 /f/C-DAC_march2022/SDM GIT (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   contact.htm
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Admin@DESKTOP-T5QL9IT MINGW64 /f/C-DAC_march2022/SDM GIT (master)
+$ git add -A
+
+Admin@DESKTOP-T5QL9IT MINGW64 /f/C-DAC_march2022/SDM GIT (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   contact.htm
+
+
+Admin@DESKTOP-T5QL9IT MINGW64 /f/C-DAC_march2022/SDM GIT (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   contact.htm
+
+
+Admin@DESKTOP-T5QL9IT MINGW64 /f/C-DAC_march2022/SDM GIT (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   contact.htm
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   contact.htm
+
+
+Admin@DESKTOP-T5QL9IT MINGW64 /f/C-DAC_march2022/SDM GIT (master)
+$ git restore contact.htm
+
+Admin@DESKTOP-T5QL9IT MINGW64 /f/C-DAC_march2022/SDM GIT (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   contact.htm
+
+
+Admin@DESKTOP-T5QL9IT MINGW64 /f/C-DAC_march2022/SDM GIT (master)
+$ git rm --cached contact.htm
+rm 'contact.htm'
+
+Admin@DESKTOP-T5QL9IT MINGW64 /f/C-DAC_march2022/SDM GIT (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    contact.htm
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        contact.htm
+
+
+Admin@DESKTOP-T5QL9IT MINGW64 /f/C-DAC_march2022/SDM GIT (master)
+$ git add *
+
+Admin@DESKTOP-T5QL9IT MINGW64 /f/C-DAC_march2022/SDM GIT (master)
+$ git rm --cached *
+fatal: not removing 'images' recursively without -r
+
+Admin@DESKTOP-T5QL9IT MINGW64 /f/C-DAC_march2022/SDM GIT (master)
+$ git rm --cached -r*
+error: unknown switch `*'
+usage: git rm [<options>] [--] <file>...
+
+    -n, --dry-run         dry run
+    -q, --quiet           do not list removed files
+    --cached              only remove from the index
+    -f, --force           override the up-to-date check
+    -r                    allow recursive removal
+    --ignore-unmatch      exit with a zero status even if nothing matched
+    --sparse              allow updating entries outside of the sparse-checkout cone
+    --pathspec-from-file <file>
+                          read pathspec from file
+    --pathspec-file-nul   with --pathspec-from-file, pathspec elements are separated with NUL character
+
+
+Admin@DESKTOP-T5QL9IT MINGW64 /f/C-DAC_march2022/SDM GIT (master)
+$ git rm --cached -r *
+rm 'SCM.txt'
+rm 'contact.htm'
+rm 'images/IMG_20210114_132439_556.jpg'
+rm 'index.htm'
+
+Admin@DESKTOP-T5QL9IT MINGW64 /f/C-DAC_march2022/SDM GIT (master)
+$ git add -A
+
+Admin@DESKTOP-T5QL9IT MINGW64 /f/C-DAC_march2022/SDM GIT (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   contact.htm
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   contact.htm
+
+
+Admin@DESKTOP-T5QL9IT MINGW64 /f/C-DAC_march2022/SDM GIT (master)
+$ git rm --cached contact.htm
+error: the following file has staged content different from both the
+file and the HEAD:
+    contact.htm
+(use -f to force removal)
+
+Admin@DESKTOP-T5QL9IT MINGW64 /f/C-DAC_march2022/SDM GIT (master)
+$ git rm --cached contact.htm -f
+rm 'contact.htm'
+
+Admin@DESKTOP-T5QL9IT MINGW64 /f/C-DAC_march2022/SDM GIT (master)
+$ git add -A
+
+Admin@DESKTOP-T5QL9IT MINGW64 /f/C-DAC_march2022/SDM GIT (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   contact.htm
+
+
+Admin@DESKTOP-T5QL9IT MINGW64 /f/C-DAC_march2022/SDM GIT (master)
+$ git diff --staged
+diff --git a/contact.htm b/contact.htm
+index 20d9157..969d610 100644
+--- a/contact.htm
++++ b/contact.htm
+@@ -3,7 +3,7 @@
+ <title> Contact Us</title>
+ </head>
+ <body>
+-<h1> Please contact us @ Rahatani , Pune,  Maharashtra, 411017 </h1>
++<h1> Please contact us @ Rahatani , Pune,   411017 , Maharashtra</h1>
+
+ </body>
+ </html>
+\ No newline at end of file
+
+Admin@DESKTOP-T5QL9IT MINGW64 /f/C-DAC_march2022/SDM GIT (master)
+$ git diff
+
+Admin@DESKTOP-T5QL9IT MINGW64 /f/C-DAC_march2022/SDM GIT (master)
+$ git commit -m "contact page changed"
+[master 980af68] contact page changed
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Admin@DESKTOP-T5QL9IT MINGW64 /f/C-DAC_march2022/SDM GIT (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Admin@DESKTOP-T5QL9IT MINGW64 /f/C-DAC_march2022/SDM GIT (master)
+$ git log
+commit 980af68f9c47aea296a2b3666d13cf14c0e56698 (HEAD -> master)
+Author: BadgujarBhushan <bhushanbadgujar87@gmail.com>
+Date:   Tue Jun 21 00:30:59 2022 +0530
+
+    contact page changed
+
+commit c03968a7f5fcf8d7a18c5a06a00bdb1424269a8c
+Author: BadgujarBhushan <bhushanbadgujar87@gmail.com>
+Date:   Mon Jun 20 23:50:22 2022 +0530
+
+    added web pages
+
+commit efa658b91c901ef36b7223ea34ab17565d27bf45
+Author: BadgujarBhushan <bhushanbadgujar87@gmail.com>
+Date:   Mon Jun 20 23:10:52 2022 +0530
+
+    updated SCM.txt
+
+commit e6c0d6bd88b60b375820550f291abc316cf7217c
+Author: BadgujarBhushan <bhushanbadgujar87@gmail.com>
+Date:   Mon Jun 20 23:03:27 2022 +0530
+
+
+Admin@DESKTOP-T5QL9IT MINGW64 /f/C-DAC_march2022/SDM GIT (master)
+$ git show
+commit 980af68f9c47aea296a2b3666d13cf14c0e56698 (HEAD -> master)
+Author: BadgujarBhushan <bhushanbadgujar87@gmail.com>
+Date:   Tue Jun 21 00:30:59 2022 +0530
+
+    contact page changed
+
+diff --git a/contact.htm b/contact.htm
+index 20d9157..969d610 100644
+--- a/contact.htm
++++ b/contact.htm
+@@ -3,7 +3,7 @@
+ <title> Contact Us</title>
+ </head>
+ <body>
+-<h1> Please contact us @ Rahatani , Pune,  Maharashtra, 411017 </h1>
++<h1> Please contact us @ Rahatani , Pune,   411017 , Maharashtra</h1>
+
+ </body>
+ </html>
+\ No newline at end of file
+
+Admin@DESKTOP-T5QL9IT MINGW64 /f/C-DAC_march2022/SDM GIT (master)
+$ git log
+commit 980af68f9c47aea296a2b3666d13cf14c0e56698 (HEAD -> master)
+Author: BadgujarBhushan <bhushanbadgujar87@gmail.com>
+Date:   Tue Jun 21 00:30:59 2022 +0530
+
+    contact page changed
+
+commit c03968a7f5fcf8d7a18c5a06a00bdb1424269a8c
+Author: BadgujarBhushan <bhushanbadgujar87@gmail.com>
+Date:   Mon Jun 20 23:50:22 2022 +0530
+
+    added web pages
+
+commit efa658b91c901ef36b7223ea34ab17565d27bf45
+Author: BadgujarBhushan <bhushanbadgujar87@gmail.com>
+Date:   Mon Jun 20 23:10:52 2022 +0530
+
+    updated SCM.txt
+
+commit e6c0d6bd88b60b375820550f291abc316cf7217c
+Author: BadgujarBhushan <bhushanbadgujar87@gmail.com>
+Date:   Mon Jun 20 23:03:27 2022 +0530
+
+
+Admin@DESKTOP-T5QL9IT MINGW64 /f/C-DAC_march2022/SDM GIT (master)
+$ git reset c03968a7f5fcf8d7a18c5a06a00bdb1424269a8c
+Unstaged changes after reset:
+M       contact.htm
+
+Admin@DESKTOP-T5QL9IT MINGW64 /f/C-DAC_march2022/SDM GIT (master)
+$ git log
+commit c03968a7f5fcf8d7a18c5a06a00bdb1424269a8c (HEAD -> master)
+Author: BadgujarBhushan <bhushanbadgujar87@gmail.com>
+Date:   Mon Jun 20 23:50:22 2022 +0530
+
+    added web pages
+
+commit efa658b91c901ef36b7223ea34ab17565d27bf45
+Author: BadgujarBhushan <bhushanbadgujar87@gmail.com>
+Date:   Mon Jun 20 23:10:52 2022 +0530
+
+    updated SCM.txt
+
+commit e6c0d6bd88b60b375820550f291abc316cf7217c
+Author: BadgujarBhushan <bhushanbadgujar87@gmail.com>
+Date:   Mon Jun 20 23:03:27 2022 +0530
+
+    initial version
+
+Admin@DESKTOP-T5QL9IT MINGW64 /f/C-DAC_march2022/SDM GIT (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   contact.htm
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Admin@DESKTOP-T5QL9IT MINGW64 /f/C-DAC_march2022/SDM GIT (master)
+$ git diff
+diff --git a/contact.htm b/contact.htm
+index 20d9157..969d610 100644
+--- a/contact.htm
++++ b/contact.htm
+@@ -3,7 +3,7 @@
+ <title> Contact Us</title>
+ </head>
+ <body>
+-<h1> Please contact us @ Rahatani , Pune,  Maharashtra, 411017 </h1>
++<h1> Please contact us @ Rahatani , Pune,   411017 , Maharashtra</h1>
+
+ </body>
+ </html>
+\ No newline at end of file
+
+Admin@DESKTOP-T5QL9IT MINGW64 /f/C-DAC_march2022/SDM GIT (master)
+$ git add -A
+
+Admin@DESKTOP-T5QL9IT MINGW64 /f/C-DAC_march2022/SDM GIT (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   contact.htm
+
+
+Admin@DESKTOP-T5QL9IT MINGW64 /f/C-DAC_march2022/SDM GIT (master)
+$ git commit -m "contact page added"
+[master e95e802] contact page added
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Admin@DESKTOP-T5QL9IT MINGW64 /f/C-DAC_march2022/SDM GIT (master)
+$ git log
+commit e95e80212bcfc8c897a1bfa4ed94735a27838fa7 (HEAD -> master)
+Author: BadgujarBhushan <bhushanbadgujar87@gmail.com>
+Date:   Tue Jun 21 00:39:55 2022 +0530
+
+    contact page added
+
+commit c03968a7f5fcf8d7a18c5a06a00bdb1424269a8c
+Author: BadgujarBhushan <bhushanbadgujar87@gmail.com>
+Date:   Mon Jun 20 23:50:22 2022 +0530
+
+    added web pages
+
+commit efa658b91c901ef36b7223ea34ab17565d27bf45
+Author: BadgujarBhushan <bhushanbadgujar87@gmail.com>
+Date:   Mon Jun 20 23:10:52 2022 +0530
+
+    updated SCM.txt
+
+commit e6c0d6bd88b60b375820550f291abc316cf7217c
+Author: BadgujarBhushan <bhushanbadgujar87@gmail.com>
+Date:   Mon Jun 20 23:03:27 2022 +0530
+
+
+Admin@DESKTOP-T5QL9IT MINGW64 /f/C-DAC_march2022/SDM GIT (master)
+$ git reset  c03968a7f5fcf8d7a18c5a06a00bdb1424269a8c --hard
+HEAD is now at c03968a added web pages
+
+Admin@DESKTOP-T5QL9IT MINGW64 /f/C-DAC_march2022/SDM GIT (master)
+$ git config --list
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=openssl
+http.sslcainfo=C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+pull.rebase=false
+credential.helper=manager-core
+credential.https://dev.azure.com.usehttppath=true
+init.defaultbranch=master
+user.name=BadgujarBhushan
+user.email=bhushanbadgujar87@gmail.com
+core.repositoryformatversion=0
+core.filemode=false
+core.bare=false
+core.logallrefupdates=true
+core.symlinks=false
+core.ignorecase=true
+
+Admin@DESKTOP-T5QL9IT MINGW64 /f/C-DAC_march2022/SDM GIT (master)
+$ git ls-files
+SCM.txt
+contact.htm
+images/IMG_20210114_132439_556.jpg
+index.htm
+
+Admin@DESKTOP-T5QL9IT MINGW64 /f/C-DAC_march2022/SDM GIT (master)
+$ git ls-tree --full-tree --name-only -r HEAD
+SCM.txt
+contact.htm
+images/IMG_20210114_132439_556.jpg
+index.htm
+
+Admin@DESKTOP-T5QL9IT MINGW64 /f/C-DAC_march2022/SDM GIT (master)
+$ git log
+commit c03968a7f5fcf8d7a18c5a06a00bdb1424269a8c (HEAD -> master)
+Author: BadgujarBhushan <bhushanbadgujar87@gmail.com>
+Date:   Mon Jun 20 23:50:22 2022 +0530
+
+    added web pages
+
+commit efa658b91c901ef36b7223ea34ab17565d27bf45
+Author: BadgujarBhushan <bhushanbadgujar87@gmail.com>
+Date:   Mon Jun 20 23:10:52 2022 +0530
+
+    updated SCM.txt
+
+commit e6c0d6bd88b60b375820550f291abc316cf7217c
+Author: BadgujarBhushan <bhushanbadgujar87@gmail.com>
+Date:   Mon Jun 20 23:03:27 2022 +0530
+
+    initial version
+
+Admin@DESKTOP-T5QL9IT MINGW64 /f/C-DAC_march2022/SDM GIT (master)
+$ git log --pretty=oneline
+c03968a7f5fcf8d7a18c5a06a00bdb1424269a8c (HEAD -> master) added web pages
+efa658b91c901ef36b7223ea34ab17565d27bf45 updated SCM.txt
+e6c0d6bd88b60b375820550f291abc316cf7217c initial version
+
+Admin@DESKTOP-T5QL9IT MINGW64 /f/C-DAC_march2022/SDM GIT (master)
+$ git log --pretty=full
+commit c03968a7f5fcf8d7a18c5a06a00bdb1424269a8c (HEAD -> master)
+Author: BadgujarBhushan <bhushanbadgujar87@gmail.com>
+Commit: BadgujarBhushan <bhushanbadgujar87@gmail.com>
+
+    added web pages
+
+commit efa658b91c901ef36b7223ea34ab17565d27bf45
+Author: BadgujarBhushan <bhushanbadgujar87@gmail.com>
+Commit: BadgujarBhushan <bhushanbadgujar87@gmail.com>
+
+    updated SCM.txt
+
+commit e6c0d6bd88b60b375820550f291abc316cf7217c
+Author: BadgujarBhushan <bhushanbadgujar87@gmail.com>
+Commit: BadgujarBhushan <bhushanbadgujar87@gmail.com>
+
+    initial version
+
+Admin@DESKTOP-T5QL9IT MINGW64 /f/C-DAC_march2022/SDM GIT (master)
+$ git log --pretty=fuller
+commit c03968a7f5fcf8d7a18c5a06a00bdb1424269a8c (HEAD -> master)
+Author:     BadgujarBhushan <bhushanbadgujar87@gmail.com>
+AuthorDate: Mon Jun 20 23:50:22 2022 +0530
+Commit:     BadgujarBhushan <bhushanbadgujar87@gmail.com>
+CommitDate: Mon Jun 20 23:50:22 2022 +0530
+
+    added web pages
+
+commit efa658b91c901ef36b7223ea34ab17565d27bf45
+Author:     BadgujarBhushan <bhushanbadgujar87@gmail.com>
+AuthorDate: Mon Jun 20 23:10:52 2022 +0530
+Commit:     BadgujarBhushan <bhushanbadgujar87@gmail.com>
+CommitDate: Mon Jun 20 23:10:52 2022 +0530
+
+    updated SCM.txt
+
+commit e6c0d6bd88b60b375820550f291abc316cf7217c
+Author:     BadgujarBhushan <bhushanbadgujar87@gmail.com>
+AuthorDate: Mon Jun 20 23:03:27 2022 +0530
+Commit:     BadgujarBhushan <bhushanbadgujar87@gmail.com>
+CommitDate: Mon Jun 20 23:03:27 2022 +0530
+
+
+Admin@DESKTOP-T5QL9IT MINGW64 /f/C-DAC_march2022/SDM GIT (master)
+$ git log --pretty=email
+From c03968a7f5fcf8d7a18c5a06a00bdb1424269a8c Mon Sep 17 00:00:00 2001
+From: BadgujarBhushan <bhushanbadgujar87@gmail.com>
+Date: Mon, 20 Jun 2022 23:50:22 +0530
+Subject: [PATCH] added web pages
+
+
+From efa658b91c901ef36b7223ea34ab17565d27bf45 Mon Sep 17 00:00:00 2001
+From: BadgujarBhushan <bhushanbadgujar87@gmail.com>
+Date: Mon, 20 Jun 2022 23:10:52 +0530
+Subject: [PATCH] updated SCM.txt
+
+
+From e6c0d6bd88b60b375820550f291abc316cf7217c Mon Sep 17 00:00:00 2001
+From: BadgujarBhushan <bhushanbadgujar87@gmail.com>
+Date: Mon, 20 Jun 2022 23:03:27 +0530
+Subject: [PATCH] initial version
+
+
+Admin@DESKTOP-T5QL9IT MINGW64 /f/C-DAC_march2022/SDM GIT (master)
+$
